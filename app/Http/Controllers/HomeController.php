@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Http\Controllers;
+
+
+class HomeController extends Controller
+{
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        $data = [
+            'title' => 'صفحه اصلی',
+        ];
+        return view('home', $data);
+    }
+}
