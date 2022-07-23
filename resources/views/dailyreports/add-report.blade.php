@@ -5,7 +5,7 @@
 
 @section('content')
     <div class="page-titles">
-        <h4>مدیریت دسته بندی</h4>
+        <h4>ثبت گزارش</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item "><a href="javascript:void(0)">گزارشات > </a></li>
             <li class="breadcrumb-item active"><a href="javascript:void(0)">  افزودن گزارش روزانه </a></li>

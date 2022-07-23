@@ -60,7 +60,7 @@ class DailyreportController extends Controller
         foreach ($check['report'] as $item){
             Dailyreport::create($item);
         }
-        toastr()->success('Are you the 6 fingered man?');
+        toastr()->success('گزارش با موفقیت ثبت شد.');
         return redirect()->route("add-report");
     }
 
@@ -84,7 +84,7 @@ class DailyreportController extends Controller
             toastr()->success('گزارش با موفقیت حذف شد.');
             return redirect()->route('reports');
         } catch (Exception $exception) {
-            \Yoeunes\Toastr\Facades\Toastr::error('مشکلی در حذف به وجود آمد.');
+            \toastr()->error('مشکلی در حذف به وجود آمد.');
             return redirect()->back();
         }
     }
